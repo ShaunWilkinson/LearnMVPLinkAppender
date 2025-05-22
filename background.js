@@ -40,3 +40,9 @@ chrome.storage.onChanged.addListener((changes, area) => {
     updateRedirectRule();
   }
 });
+
+// Handles opening the options page when a user clicks the extension in the extensions list
+chrome.action.onClicked.addListener(() => {
+	chrome.runtime.openOptionsPage();
+});
+  
