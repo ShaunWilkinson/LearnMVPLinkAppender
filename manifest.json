@@ -1,22 +1,25 @@
 {
 	"manifest_version": 3,
 	"name": "MVP Link Auto-Appender",
-	"version": "1.1",
-	"description": "Appends your MVP tracking ID to Microsoft Learn links.",
+	"version": "1.2",
+	"description": "Appends your MVP tracking ID to Microsoft Learn links and allows for easy copying of full learn URL following guidelines.",
 	"permissions": [
-	  "declarativeNetRequest",
-	  "declarativeNetRequestWithHostAccess",
-	  "storage"
-	],
+		"declarativeNetRequest","storage", "tabs", "scripting"],
 	"host_permissions": [
-	  "*://learn.microsoft.com/*"
+	  	"*://learn.microsoft.com/*"
 	],
 	"background": {
-	  "service_worker": "background.js"
+	  	"service_worker": "background.js"
 	},
+	"content_scripts": [
+      {
+        "matches": ["https://learn.microsoft.com/*"],
+        "js": ["content.js"]
+      }
+   ],
 	"options_page": "options.html",
 	"action": {
-	  "default_title": "MVP Link Auto-Appender"
+	  	"default_title": "MVP Link Auto-Appender"
 	}
-  }
+}
   
