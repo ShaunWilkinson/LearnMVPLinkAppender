@@ -1,6 +1,6 @@
-# MVP Link Auto-Tracker
+# MVP Link Auto-Appender
 
-A lightweight Edge extension that automatically appends `wt.mc_id=MVP_12345` to all Microsoft Learn links. Allowing for much easier sharing of our own learn links.
+A lightweight Edge extension that automatically appends your unique MVP code (Eg. `wt.mc_id=MVP_12345`) to all Microsoft Learn links. Allowing for much easier sharing.
 
 ## How it works
 
@@ -13,5 +13,4 @@ A lightweight Edge extension that automatically appends `wt.mc_id=MVP_12345` to 
 2. Go to `edge://extensions`
 3. Enable Developer Mode
 4. Click "Load unpacked" and select this folder
-5. Whilst on the extensions page, select Details under the extension entry.
-6. Select Extension otpions and set your unique MVP parameter
+5. Select the extension in the list of Extensions to access the configuration page, where you can set your own MVP value.
