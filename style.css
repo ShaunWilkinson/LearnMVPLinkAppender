@@ -16,8 +16,8 @@ body {
     font-family: "Segoe UI", Roboto, sans-serif;
     background: var(--bg);
     margin: 0;
-    padding: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
@@ -26,11 +26,17 @@ body {
 .card {
     background: var(--card-bg);
     padding: 2rem;
+    margin-top: 2rem;
     border-radius: var(--radius);
     box-shadow: 0 4px 12px var(--shadow);
     width: 100%;
     max-width: 480px;
     border: 1px solid var(--border);
+}
+
+main {
+    flex: 1;
+    align-self: center;
 }
 
 h2 {
@@ -89,4 +95,14 @@ code {
     background-color: #eef2f5;
     padding: 0.2rem 0.4rem;
     border-radius: 6px;
+}
+
+footer {
+    min-height: 50px;
+    background: var(--card-bg);
+    padding: 2rem;
+    box-shadow: 0 4px 12px var(--shadow);
+    width: 100%;
+    border-top: 1px solid var(--border);
+    text-align: center;
 }
